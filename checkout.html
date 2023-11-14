@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Flower Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Spring Blossom</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" id="home-id">Home</a></li>
+                <li><a href="#shop" id="shop-id">Shop</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="checkout">
+        <!-- Photo and thanks message -->
+        <div class="thanks-content">
+            <img src="2.jpg" alt="Thank You Image">
+        </div>
+        <!-- Display selected products -->
+        <div class="selected-products-section">
+            <h2>Succesful Order!</h2>
+            <p>Thank you for choosing our flower shop! Your order has been successfully received.</p>
+            <ul id="selected-products-list"></ul>
+        </div>
+    </section>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const checkoutButton = document.getElementById('shop-id');
+
+    checkoutButton.addEventListener('click', function () {
+        // Redirect to the checkout page
+        window.location.href = 'home.html';
+    });
+});
+    </script>
+    <script type="text/javascript" src="Script.js"></script>
+</body>
+<footer id="contacts">
+    <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p>Email: info@SpringBlossom.com</p>
+        <p>Phone: +20 102 296 2981</p>
+        <p>Address: Benha, Egypt</p>
+    </div>
+</footer>
+</html>
